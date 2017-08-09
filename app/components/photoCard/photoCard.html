@@ -1,0 +1,6 @@
+<div class='image-card' ng-class='{"image-card_fullsize": fullSize}'>
+	<a href="{{ photoRedirect }}" ng-if='photoRedirect'><img class='image-card__image' ng-src="{{ photoUrl }}" alt="{{ photoTitle }}"></a>
+	<img class='image-card__image' ng-src="{{ photoUrl }}" alt="{{ photoTitle }}" ng-if='!photoRedirect'>
+	<p class='image-card__title' ng-if='photoTitle'>{{ photoTitle }}</p>
+	<a class='image-card__album-link' href="{{ albumUrl }}" ng-if='albumUrl'>open album</a>
+</div>

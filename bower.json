@@ -1,0 +1,13 @@
+{
+  "name": "angular-gallery",
+  "description": "simple gallery with Angular",
+  "version": "0.0.2",
+  "homepage": "https://github.com/burdinbogdan/angular-gallery",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.6.*",
+    "angular-route": "~1.6.*",
+    "angular-resource": "~1.6.*"
+  }
+}
