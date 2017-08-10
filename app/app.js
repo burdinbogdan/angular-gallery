@@ -10,6 +10,9 @@ import gallery from './gallery';
 import album from './album';
 import image from './image';
 
+import './public/styles/css/_reset.css';
+import './public/styles/scss/main.scss';
+
 angular.module('galleryApp', [
 	ngRoute,
 	ngResource,
@@ -25,13 +28,13 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
 	$locationProvider.html5Mode(true);
 
 	$routeProvider.when('/', {
-		templateUrl: './gallery/gallery.html',
+		template: require('./gallery/gallery.html'),
 		controller: 'galleryCtrl'
 	}).when('/album/:id', {
-		templateUrl: './album/album.html',
+		template: require('./album/album.html'),
 		controller: 'albumCtrl'
 	}).when('/image/:id', {
-		templateUrl: './image/image.html',
+		template: require('./image/image.html'),
 		controller: 'imageCtrl'
 	}).otherwise({
 		redirectTo: '/'

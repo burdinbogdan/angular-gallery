@@ -1,6 +1,6 @@
 export default () => {
     return {
-        templateUrl: 'components/photoCard/photoCard.html',
+        template: require('./photoCard.html'),
         replace: false,
         restrict: 'E',
         scope: {
